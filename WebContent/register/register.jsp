@@ -6,14 +6,14 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>个人信息系统---注册页面</title>
 </head>
-<body>
+<body bgcolor="pink">
 <center>
 <h1>请填写以下注册信息</h1>
 <hr>
-<form action="/RegisterServlet" method="post">
+<form action="/pims/register" method="post">
 <table border="1" cellspacing="0" cellpadding="0">
   <tr>
-    <td>登录名字</td>
+    <td>用户昵称</td>
     <td><input type="text" name="username"></td>
   </tr>
   <tr>
@@ -28,6 +28,7 @@
     <td>用户姓名</td>
     <td><input type="text" name="name"></td>
   </tr>
+ 
   <tr>
     <td>用户性别</td>
     <td><input type="radio" name="sex" value="男" checked>男<input type="radio" name="sex" value="女">女</td>
@@ -73,8 +74,8 @@
   <tr>
     <td>用户名族</td>
     <td><input type="radio" name="nation" value="汉族">汉族
-<input type="radio" name="nation" value="回族">汉族
-<input type="radio" name="nation" value="壮族">汉族
+<input type="radio" name="nation" value="回族">回族
+<input type="radio" name="nation" value="壮族">壮族
 <input type="radio" name="nation" value="其他">其他</td>
   </tr>
   <tr>
@@ -93,7 +94,7 @@
   </tr>
   <tr>
     <td>用户类型</td>
-    <td><select name="work">
+    <td><select name="works">
 <option value="软件开发工程师">软件开发工程师
 <option value="软件测试工程师">软件测试工程师
 <option value="教师">教师
@@ -125,6 +126,8 @@
     <td>邮箱地址</td>
     <td><input type="text" name="emall" /></td>
   </tr>
+
+
   <tr>
     <td colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="确定" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" value="清除" /></td>
     </tr>

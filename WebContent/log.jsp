@@ -10,19 +10,20 @@
     <script src="https://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script src="https://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-<body>
+<body bgcolor="pink">
 <div id="content-top"><p>个人信息管理系统<p/></div>
 <div id="content">
 <div id="c-top">管理员登录</div>
 
 <div id="c-c">
-<form>
-<STRONG>用　户名:</STRONG><input type="text" name="uname" size="21"><br><br>
-<STRONG>密　　码:</STRONG><input type="password" name="upass" size="22"><br><br>
+<form action="/pims/login" method="post">
+<STRONG>用　户名:</STRONG><input type="text" name="username" size="21"><br><br>
+<STRONG>密　　码:</STRONG><input type="password" name="password1" size="22"><br><br>
 <input type="submit" value="提交" class="btn btn-warning">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" value="清除" class="btn btn-warning">
 </form>
 <hr>
-<font size="4">注册</font>
+<font size="4"><a href="register.jsp">注册</a></font><br><br>
+<h3>温馨提示:如果你还没有注册，请点击“注册”按钮，如果你已有账号，请登录.....</h3>
 </div>
 版权作者：君陌离
 </div>
